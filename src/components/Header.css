@@ -1,5 +1,6 @@
 .header {
   display: flex;
+  background-color: white;
   justify-content: space-evenly;
   border-bottom: 0.1px solid lightgrey;
   padding-top: 10px;
@@ -10,8 +11,8 @@
   z-index: 999;
 }
 
-.header__left{
-    display: flex;
+.header__left {
+  display: flex;
 }
 
 .header__left > img {
@@ -37,5 +38,5 @@
 }
 
 .header__right {
-    display: flex;
+  display: flex;
 }

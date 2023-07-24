@@ -7,6 +7,17 @@
     color: grey;
 }
 
+.headerOption__icon {
+    object-fit: contain;
+     height: 30px !important;
+     width: 30px !important;
+}
+
+.headerOption__title {
+    font-size: 12px;
+    font-weight: 400;
+}
+
 .headerOption:hover {
     color: black;
 }
