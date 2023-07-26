@@ -15,7 +15,7 @@ function Sidebar() {
       <div className="sidebar__top">
         <img src={require("./images/header_background.jpg")} alt="" />
         <Avatar className="sidebar__avatar" />
-        <h2>JanggDev</h2>
+        <h2>JanggoDev</h2>
         <h4>JanggoDev@gmail.com</h4>
       </div>
 

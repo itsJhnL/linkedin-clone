@@ -7,19 +7,19 @@ import AddCommentIcon from '@mui/icons-material/AddComment';
 import RepeatIcon from '@mui/icons-material/Repeat';
 import SendIcon from '@mui/icons-material/Send';
 
-function Post({ name, description, photoUrl }) {
+function Post({ name, description, message, photoUrl }) {
   return (
     <div className="post">
       <div className="post__header">
         <Avatar />
         <div className="post__info">
-          <h2>Janggo Dev</h2>
-          <p>Description</p>
+          <h2>{name}</h2>
+          <p>{description}</p>
         </div>
       </div>
 
       <div className="post__body">
-        <p>Message goes here</p>
+        <p>{message}</p>
       </div>
 
       <div className="post__buttons">
