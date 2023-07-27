@@ -30,13 +30,15 @@ function Sidebar() {
         </div>
       </div>
 
-      <div className="sidebar__bottom">
-        <p>Recent</p>
-        {recentItem("reactjs")}
-        {recentItem("gagaling")}
-        {recentItem("din")}
-        {recentItem("ako")}
-        {recentItem("tiwala lang!")}
+      <div className="sidenav">
+        <div className="sidebar__bottom">
+          <p>Recent</p>
+          {recentItem("reactjs")}
+          {recentItem("gagaling")}
+          {recentItem("din")}
+          {recentItem("ako")}
+          {recentItem("tiwala lang!")}
+        </div>
       </div>
     </div>
   );

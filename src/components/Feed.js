@@ -35,6 +35,7 @@ function Feed() {
       photoURL: "",
       timestamp: firebase.firestore.FieldValue.serverTimestamp(),
     });
+    setInput("");
   };
 
   return (
