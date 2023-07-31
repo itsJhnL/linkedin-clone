@@ -11,17 +11,20 @@ function App() {
   const user = useSelector(selectUser);
 
   return (
-    <div className="App">
-      <Header />
-      {/* {!user ? (
+    <div className="loginPhase">
+      {!user ? (
         <Login />
-      ) : ( */}
-        <div className="app__body">
-          <Sidebar />
-          <Feed />
-          {/* Widgets */}
+      ) : (
+        <div className="App">
+          <Header />
+
+          <div className="app__body">
+            <Sidebar />
+            <Feed />
+            {/* Widgets */}
+          </div>
         </div>
-      {/* )} */}
+      )}
     </div>
   );
 }

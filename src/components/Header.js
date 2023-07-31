@@ -1,7 +1,7 @@
 import React from "react";
 import SearchIcon from "@mui/icons-material/Search";
 import LinkedIn from "./images/linkedin.png";
-import "./Header.css";
+import "../styles/Header.css";
 import HeaderOption from "./HeaderOption";
 import HomeIcon from "@mui/icons-material/Home";
 import PeopleIcon from "@mui/icons-material/People";

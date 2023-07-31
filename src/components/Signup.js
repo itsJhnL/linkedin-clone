@@ -1,13 +1,6 @@
 import React from "react";
-import "../styles/Login.css";
-import PersonIcon from "@mui/icons-material/Person";
-import LockIcon from "@mui/icons-material/Lock";
-import LoginOption from "./LoginOption";
-// import facebook from "./images/facebook.png";
-// import x from "./images/X.jpg";
-// import google from "./images/google.png";
 
-function Login() {
+function Signup() {
   return (
     <div className="container">
       <div className="login">
@@ -55,4 +48,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Signup;

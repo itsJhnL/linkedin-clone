@@ -1,0 +1,115 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login {
+  border: solid 1px lightgray;
+  padding: 50px;
+  border-radius: 10px;
+  background-color: white;
+  color: gray;
+}
+
+.headerLogin {
+  text-align: center;
+  padding-bottom: 40px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  font-style: bold;
+  color: black;
+}
+
+.login > form > div > label {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.loginIcon {
+  position: absolute;
+  margin: 5px;
+  padding-right: 10px;
+}
+
+.username {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.username > input {
+  outline: none;
+  border: none;
+  border-bottom: solid 1px gray;
+  padding: 10px;
+  padding-left: 35px;
+}
+
+.password {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5px;
+}
+
+.password > input {
+  outline: none;
+  border: none;
+  border-bottom: solid 1px gray;
+  padding: 10px;
+  padding-left: 35px;
+}
+
+.forgotPassword {
+  display: flex;
+  justify-content: end;
+  padding: 5px;
+}
+
+.forgotPassword > label > a {
+  text-decoration: none;
+}
+
+.loginButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.loginButton > input {
+  padding-top: 10px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 20px;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  padding: 10px 100px 10px 100px;
+  color: white;
+  cursor: pointer;
+}
+
+.signup {
+  text-align: center;
+  margin: -15px;
+}
+
+.signup > label > a {
+  text-decoration: none;
+}
+/* skipped these thing, not necessarily */
+/* .socialMedia {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.socialMedia > p {
+  border-bottom: solid 1px gray;
+  flex-direction: column;
+}
+
+.socialMedia > img {
+  height: 25px;
+} */
