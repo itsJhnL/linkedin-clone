@@ -1,0 +1,9 @@
+.loginOption {
+    display: flex
+}
+
+.loginOption__icon {
+    position: absolute;
+    margin: 5px;
+}
+

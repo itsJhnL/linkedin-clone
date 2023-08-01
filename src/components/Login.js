@@ -10,6 +10,9 @@ import LoginOption from "./LoginOption";
 function Login() {
   return (
     <div className="container">
+      <div className="welcomeText">
+        <h1>Connect with friends and the worlds around you on the multiverse.</h1>
+      </div>
       <div className="login">
         <form>
           {/* <div className="headerLogin">

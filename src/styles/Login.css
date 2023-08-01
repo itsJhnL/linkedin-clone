@@ -1,7 +1,12 @@
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcomeText {
+  width: 25%;
+  padding: 100px;
 }
 
 .login {
@@ -10,6 +15,7 @@
   border-radius: 10px;
   background-color: white;
   color: gray;
+  box-shadow: 4px 4px 5px gray;
 }
 
 .headerLogin {
