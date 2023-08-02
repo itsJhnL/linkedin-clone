@@ -6,6 +6,8 @@ import Feed from "./components/Feed";
 import { useSelector } from "react-redux";
 import { selectUser } from "./features/userSlice";
 import Login from "./components/Login";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Signup from "./components/Signup";
 
 function App() {
   const user = useSelector(selectUser);

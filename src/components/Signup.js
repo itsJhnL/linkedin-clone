@@ -1,9 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import PersonIcon from "@mui/icons-material/Person";
+import LockIcon from "@mui/icons-material/Lock";
+import LoginOption from "./LoginOption";
 
 function Signup() {
   return (
     <div className="container">
-      <div className="login">
+      <div className="signup">
         <form>
           {/* <div className="headerLogin">
           <p>Login</p>
@@ -18,19 +22,19 @@ function Signup() {
             <LoginOption Icon={LockIcon} />
             <input type="password" placeholder="Type your password" />
           </div>
-          <div className="forgotPassword">
+          {/* <div className="forgotPassword">
             <label htmlFor="">
               <a href="">Forgot Password?</a>
             </label>
-          </div>
+          </div> */}
 
           <div className="loginButton">
-            <input type="button" value="LOGIN" />
+            <input type="button" value="SIGNUP" />
           </div>
 
           <div className="signup">
             <label htmlFor="">
-              Don't have an account? <a href="">Signup</a>
+              Already have an account? <a href="">Login</a>
             </label>
           </div>
           {/* Skipped, not necessarily */}
