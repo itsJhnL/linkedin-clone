@@ -4,18 +4,13 @@ import PersonIcon from "@mui/icons-material/Person";
 import LockIcon from "@mui/icons-material/Lock";
 import LoginOption from "./LoginOption";
 import { auth } from "./Firebase";
-import Signup from "./Signup";
-// import facebook from "./images/facebook.png";
-// import x from "./images/X.jpg";
-// import google from "./images/google.png";
+import google from "./images/google.png";
 
 function Login() {
-
   //to another page
   const signUp = (e) => {
     e.preventDefault();
-    <Signup />
-  }
+  };
 
   const loginToApp = (e) => {
     // e.preventDefault();
@@ -29,11 +24,13 @@ function Login() {
           Connect with friends and the worlds around you on the multiverse.
         </h1>
       </div>
-      <div className="login">
+
+      {/* LOGIN FORM */}
+      <div className="loginForm">
         <form>
-          {/* <div className="headerLogin">
-          <p>Login</p>
-        </div> */}
+          <div className="headerLogin">
+            <p>Login</p>
+          </div>
           <div className="username">
             <label htmlFor="">Username</label>
             <LoginOption Icon={PersonIcon} />
@@ -58,13 +55,75 @@ function Login() {
 
           <div className="loginButton">
             <button type="submit" onClick={loginToApp}>
-              LOGIN
+              LOG IN
             </button>
           </div>
 
           <div className="signup">
             <label htmlFor="">
-              Don't have an account? <a href="./Signup" /* onClick={signUp} */>Signup</a>
+              Don't have an account? <a href="./Signup">Register</a>
+            </label>
+          </div>
+
+          <div className="division-text">Or</div>
+
+          <div className="signWith">
+            {/* <div className="Box">
+              <div className="iconBox">
+                <img src={google} alt="" />
+              </div>
+              <div className="iconText">
+                <input type="button" value="Login with Google"/>
+              </div>
+            </div> */}
+
+            <div className="iconText">
+              <div className="icon">
+                <img src={google} alt="" />
+              </div>
+              <div className="text">
+                <p>Login with Google</p>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      {/* SIGNUP FORM */}
+      <div className="signupForm">
+        <form>
+          <div className="headerSignup">
+            <p>Create your new account</p>
+          </div>
+          <div className="username">
+            <label htmlFor="">Username</label>
+            <LoginOption Icon={PersonIcon} />
+            <input
+              type="text"
+              placeholder="Type your username"
+              minlength="5"
+              maxlength="20"
+              required
+            />
+          </div>
+          <div className="password">
+            <label htmlFor="">Password</label>
+            <LoginOption Icon={LockIcon} />
+            <input type="password" placeholder="Type your password" />
+          </div>
+          <div className="forgotPassword">
+            <label htmlFor="">
+              <a href="">Forgot Password?</a>
+            </label>
+          </div>
+
+          <div className="signupButton">
+            <button type="submit">Create Account</button>
+          </div>
+
+          <div className="signup">
+            <label htmlFor="">
+              Already have an account? <a href="">Login</a>
             </label>
           </div>
           {/* Skipped, not necessarily */}
