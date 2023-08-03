@@ -3,19 +3,19 @@ import "../styles/Login.css";
 import PersonIcon from "@mui/icons-material/Person";
 import LockIcon from "@mui/icons-material/Lock";
 import LoginOption from "./LoginOption";
-import { auth } from "./Firebase";
+// import { auth } from "./Firebase";
 import google from "./images/google.png";
 
 function Login() {
   //to another page
-  const signUp = (e) => {
+  /* const signUp = (e) => {
     e.preventDefault();
   };
 
   const loginToApp = (e) => {
-    // e.preventDefault();
-    // auth
-  };
+    e.preventDefault();
+    auth
+  }; */
 
   return (
     <div className="container">
@@ -54,7 +54,7 @@ function Login() {
           </div>
 
           <div className="loginButton">
-            <button type="submit" onClick={loginToApp}>
+            <button type="submit"/*  onClick={loginToApp} */>
               LOG IN
             </button>
           </div>
