@@ -1,3 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&family=Roboto:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
 .container {
   display: flex;
   align-items: center;
@@ -5,18 +13,24 @@
 }
 
 .welcomeText {
-  width: 25%;
-  padding: 100px;
+  background-color: white;
+  border: solid 1px gray;
+  padding: 50px;
+  border-radius: 10px;
+  margin: 10px;
+  width: 300px;
 }
 
 .loginForm,
 .signupForm {
+  margin-left: 50px;
   border: solid 1px lightgray;
   padding: 50px;
   border-radius: 10px;
   background-color: white;
   color: gray;
   box-shadow: 4px 4px 5px gray;
+  width: 300px;
 }
 
 .headerLogin,
@@ -82,34 +96,42 @@
   text-decoration: none;
 }
 
-.loginButton,
-.signupButton {
+.loginButton {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 15px;
 }
 
 .loginButton > button {
   outline: none;
   border: none;
-  border-radius: 20px;
-  margin: 20px 10px 20px 10px;
+  border-radius: 100px;
+  padding: 10px;
   background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
-  padding: 10px 100px 10px 100px;
   color: white;
   cursor: pointer;
+  width: 300px;
+}
+
+.signupButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 15px;
 }
 
 .signupButton > button {
   outline: none;
   border: none;
-  border-radius: 20px;
-  margin: 20px 10px 20px 10px;
+  border-radius: 100px;
+  padding: 10px;
   background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
-  padding: 10px 100px 10px 100px;
   color: white;
   cursor: pointer;
+  width: 300px;
 }
 
 .signup {
@@ -122,11 +144,24 @@
 }
 
 /* skipped these thing, not necessarily */
-.division-text {
-  font-size: 12px;
-  font-weight: 600;
-  margin-top: 40px;
+
+.divisionText {
   text-align: center;
+}
+
+.divisionText > h2 {
+  padding-top: 50px;
+  font-size: 12px;
+  border-bottom: solid 1px lightgrey;
+  line-height: 0.1em;
+  margin-bottom: 15px;
+  margin: 10px 0 20px;
+  width: 100%;
+}
+
+.divisionText > h2 span {
+  background: white;
+  padding: 0 10px;
 }
 
 .signWith {
@@ -135,45 +170,28 @@
   background-color: whitesmoke;
   font-size: 12px;
   font-weight: 600;
-  margin: 20px 10px 20px 10px;
   cursor: pointer;
+  width: auto;
 }
 
 .iconText {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
 }
 
 .icon > img {
-  display: block;
   background-color: white;
   border-radius: 100px;
-  padding: 3px;
-  height: 15px;
-  margin: 5px;
-  position: relative;
-}
-
-/* .Box {
-  display: flex;
-  align-items: center;
-  padding-left: 10px;
   padding: 5px;
-}
-
-.iconBox {
-  border-radius: 100px;
-  background-color: white;
-}
-
-.iconBox > img {
-  height: 15px;
   margin: 5px;
-  position: relative;
-  display: block;
+  margin-top: 40px;
+  height: 17px;
+  position: absolute;
 }
-
-.iconText {
-  text-align: center;
-} */

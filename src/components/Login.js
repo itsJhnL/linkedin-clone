@@ -65,22 +65,15 @@ function Login() {
             </label>
           </div>
 
-          <div className="division-text">Or</div>
+         <div className="divisionText">
+          <h2><span>Or</span></h2>
+         </div>
 
           <div className="signWith">
-            {/* <div className="Box">
-              <div className="iconBox">
-                <img src={google} alt="" />
-              </div>
-              <div className="iconText">
-                <input type="button" value="Login with Google"/>
-              </div>
-            </div> */}
-
+            <div className="icon">
+              <img src={google} alt="" />
+            </div>
             <div className="iconText">
-              <div className="icon">
-                <img src={google} alt="" />
-              </div>
               <div className="text">
                 <p>Login with Google</p>
               </div>
@@ -93,7 +86,7 @@ function Login() {
       <div className="signupForm">
         <form>
           <div className="headerSignup">
-            <p>Create your new account</p>
+            <p>Signup</p>
           </div>
           <div className="username">
             <label htmlFor="">Username</label>
@@ -127,14 +120,20 @@ function Login() {
             </label>
           </div>
           {/* Skipped, not necessarily */}
-          {/* <div className="loginSocial">
-          <p className="division">Or</p>
-        </div>
-        <div className="socialMedia">
-          <img src={facebook} alt="" />
-          <img src={x} alt="" />
-          <img src={google} alt="" />
-        </div> */}
+          <div className="divisionText">
+            <h2><span>Or</span></h2>
+          </div>
+
+          <div className="signWith">
+            <div className="icon">
+              <img src={google} alt="" />
+            </div>
+            <div className="iconText">
+              <div className="text">
+                <p>Continue with Google</p>
+              </div>
+            </div>
+          </div>
         </form>
       </div>
     </div>
