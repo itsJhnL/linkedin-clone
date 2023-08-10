@@ -1,6 +1,6 @@
 import React from "react";
 import SearchIcon from "@mui/icons-material/Search";
-import LinkedIn from "./images/linkedin.png";
+// import LinkedIn from "./images/linkedin.png";
 import "../styles/Header.css";
 import HeaderOption from "./HeaderOption";
 import HomeIcon from "@mui/icons-material/Home";
@@ -14,7 +14,7 @@ function Header() {
   return (
     <div className="header">
       <div className="header__left">
-        <img src={LinkedIn} alt="" />
+        {/* <img src={LinkedIn} alt="" /> */}
 
         <div className="header__search">
           <SearchIcon />

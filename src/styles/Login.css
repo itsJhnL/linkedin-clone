@@ -6,31 +6,33 @@
   font-family: "Poppins";
 }
 
+/* LOGIN CSS */
+
 .container {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .welcomeText {
-  background-color: white;
-  border: solid 1px gray;
+  text-align: center;
   padding: 50px;
-  border-radius: 10px;
-  margin: 10px;
-  width: 300px;
+  color: white;
+  width: 350px;
+  /* border: 1px solid; */
+}
+
+.signupForm {
+  display: none;
 }
 
 .loginForm,
 .signupForm {
-  margin-left: 50px;
   border: solid 1px lightgray;
-  padding: 50px;
+  padding: 30px;
   border-radius: 10px;
-  background-color: white;
   color: gray;
-  box-shadow: 4px 4px 5px gray;
-  width: 300px;
+  width: auto;
 }
 
 .headerLogin,
@@ -40,16 +42,17 @@
   font-size: 1.5rem;
   font-weight: 800;
   font-style: bold;
-  color: black;
+  color: white;
+  width: 350px;
 }
 
 .loginForm > form > div > label {
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 300;
 }
 .signupForm > form > div > label {
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 300;
 }
 
 .loginIcon {
@@ -62,57 +65,69 @@
   display: flex;
   flex-direction: column;
   padding-bottom: 20px;
+  color: white;
 }
 
 .username > input {
+  background: none;
   outline: none;
   border: none;
   border-bottom: solid 1px gray;
   padding: 10px;
   padding-left: 35px;
+  color: white;
 }
 
 .password {
   display: flex;
   flex-direction: column;
   padding-bottom: 5px;
+  color: white;
 }
 
 .password > input {
+  background: none;
   outline: none;
   border: none;
   border-bottom: solid 1px gray;
   padding: 10px;
   padding-left: 35px;
+  color: white;
 }
 
 .forgotPassword {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   padding: 5px;
 }
 
 .forgotPassword > label > a {
   text-decoration: none;
+  color: white;
 }
 
 .loginButton {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center;;
   padding-top: 20px;
   padding-bottom: 15px;
 }
 
-.loginButton > button {
+.loginButton > label {
+  cursor: pointer;
+  width: 100%;
+}
+
+.loginButton > label > button {
   outline: none;
   border: none;
   border-radius: 100px;
-  padding: 10px;
   background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
   color: white;
+  padding: 10px;
   cursor: pointer;
-  width: 300px;
+  width: 100%;
 }
 
 .signupButton {
@@ -141,27 +156,35 @@
 
 .signup > label > a {
   text-decoration: none;
+  color: white;
+}
+
+/* Hover */
+
+[transition-style="in:circle:center"] {
+  animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) circle-in-center both;
 }
 
 /* skipped these thing, not necessarily */
 
 .divisionText {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  padding-top: 3.5rem;
+  padding-bottom: 0.75rem;
 }
 
-.divisionText > h2 {
-  padding-top: 50px;
+.line {
+  height: 0.1px;
+  flex: 1 1 0%;
+  background-color: grey;
+}
+
+.divisionText > .message {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
   font-size: 12px;
-  border-bottom: solid 1px lightgrey;
-  line-height: 0.1em;
-  margin-bottom: 15px;
-  margin: 10px 0 20px;
-  width: 100%;
-}
-
-.divisionText > h2 span {
-  background: white;
-  padding: 0 10px;
+  color: lightgrey;
 }
 
 .signWith {
@@ -175,9 +198,7 @@
 }
 
 .iconText {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   padding: 10px;
 }
 
@@ -194,4 +215,17 @@
   margin-top: 40px;
   height: 17px;
   position: absolute;
+}
+
+/* SIGN UP CSS */
+
+
+@media screen and (max-width: 768px) {
+  .container, .welcomtext {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  
 }

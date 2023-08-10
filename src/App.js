@@ -5,28 +5,30 @@ import Sidebar from "./components/Sidebar";
 import Feed from "./components/Feed";
 import { useSelector } from "react-redux";
 import { selectUser } from "./features/userSlice";
+import Chat from "./components/Chat";
 import Login from "./components/Login";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Signup from "./components/Signup";
 
 function App() {
   const user = useSelector(selectUser);
 
   return (
-    <div className="loginPhase">
-      {!user ? (
-        <Login />
-      ) : (
+    <div className="backgroundPic">
+      {/* {!user ? (
+        <div className="loginPhase">
+          <Login />
+        </div>
+      ) : ( */}
+      <Chat />
         <div className="App">
           <Header />
-
           <div className="app__body">
-            <Sidebar />
-            <Feed />
+            {/* <Sidebar />
+            <Feed /> */}
             {/* Widgets */}
+            {/* <Chat /> */}
           </div>
         </div>
-      )}
+      {/* )} */}
     </div>
   );
 }

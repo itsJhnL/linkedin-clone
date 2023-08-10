@@ -38,7 +38,7 @@ function Login() {
               type="text"
               placeholder="Type your username"
               minlength="5"
-              maxlength="20"
+              maxlength="30"
               required
             />
           </div>
@@ -54,9 +54,9 @@ function Login() {
           </div>
 
           <div className="loginButton">
-            <button type="submit"/*  onClick={loginToApp} */>
-              LOG IN
-            </button>
+            <label htmlFor="">
+              <button type="submit" /*  onClick={loginToApp} */>LOG IN</button>
+            </label>
           </div>
 
           <div className="signup">
@@ -65,9 +65,11 @@ function Login() {
             </label>
           </div>
 
-         <div className="divisionText">
-          <h2><span>Or</span></h2>
-         </div>
+          <div className="divisionText">
+            <div className="line"></div>
+            <p className="message">Or</p>
+            <div className="line"></div>
+          </div>
 
           <div className="signWith">
             <div className="icon">
@@ -95,7 +97,7 @@ function Login() {
               type="text"
               placeholder="Type your username"
               minlength="5"
-              maxlength="20"
+              maxlength="30"
               required
             />
           </div>
@@ -121,7 +123,9 @@ function Login() {
           </div>
           {/* Skipped, not necessarily */}
           <div className="divisionText">
-            <h2><span>Or</span></h2>
+            <div className="line"></div>
+            <p className="message">Or</p>
+            <div className="line"></div>
           </div>
 
           <div className="signWith">
