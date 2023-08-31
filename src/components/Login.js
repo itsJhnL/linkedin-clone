@@ -3,19 +3,21 @@ import "../styles/Login.css";
 import PersonIcon from "@mui/icons-material/Person";
 import LockIcon from "@mui/icons-material/Lock";
 import LoginOption from "./LoginOption";
-// import { auth } from "./Firebase";
+import { auth } from "./Firebase";
 import google from "./images/google.png";
 
 function Login() {
   //to another page
-  /* const signUp = (e) => {
+  const signUp = (e) => {
     e.preventDefault();
   };
 
   const loginToApp = (e) => {
     e.preventDefault();
-    auth
-  }; */
+    // auth
+  };
+
+  //Google Auth
 
   return (
     <div className="container">
@@ -37,15 +39,19 @@ function Login() {
             <input
               type="text"
               placeholder="Type your username"
-              minlength="5"
-              maxlength="30"
+              minLength="5"
+              maxLength="30"
               required
             />
           </div>
           <div className="password">
             <label htmlFor="">Password</label>
             <LoginOption Icon={LockIcon} />
-            <input type="password" placeholder="Type your password" />
+            <input
+              type="password"
+              placeholder="Type your password"
+              autoComplete="off"
+            />
           </div>
           <div className="forgotPassword">
             <label htmlFor="">
@@ -55,7 +61,9 @@ function Login() {
 
           <div className="loginButton">
             <label htmlFor="">
-              <button type="submit" /*  onClick={loginToApp} */>LOG IN</button>
+              <button type="submit" onClick={loginToApp}>
+                LOG IN
+              </button>
             </label>
           </div>
 
@@ -77,7 +85,7 @@ function Login() {
             </div>
             <div className="iconText">
               <div className="text">
-                <p>Login with Google</p>
+                <button>Login with Google</button>
               </div>
             </div>
           </div>
@@ -96,15 +104,19 @@ function Login() {
             <input
               type="text"
               placeholder="Type your username"
-              minlength="5"
-              maxlength="30"
+              minLength="5"
+              maxLength="30"
               required
             />
           </div>
           <div className="password">
             <label htmlFor="">Password</label>
             <LoginOption Icon={LockIcon} />
-            <input type="password" placeholder="Type your password" />
+            <input
+              type="password"
+              placeholder="Type your password"
+              autoComplete="off"
+            />
           </div>
           <div className="forgotPassword">
             <label htmlFor="">

@@ -13,14 +13,14 @@ function App() {
 
   return (
     <div className="backgroundPic">
-      {/* {!user ? (
+      {!user ? (
         <div className="loginPhase">
           <Login />
         </div>
-      ) : ( */}
-      <Chat />
+      ) : (
+      // <Chat />
         <div className="App">
-          <Header />
+          {/* <Header /> */}
           <div className="app__body">
             {/* <Sidebar />
             <Feed /> */}
@@ -28,7 +28,7 @@ function App() {
             {/* <Chat /> */}
           </div>
         </div>
-      {/* )} */}
+      )}
     </div>
   );
 }
