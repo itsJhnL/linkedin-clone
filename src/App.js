@@ -13,22 +13,22 @@ function App() {
 
   return (
     <div className="backgroundPic">
-      {!user ? (
+      {/*  {!user ? (
         <div className="loginPhase">
           <Login />
         </div>
       ) : (
-      // <Chat />
-        <div className="App">
-          {/* <Header /> */}
-          <div className="app__body">
-            {/* <Sidebar />
-            <Feed /> */}
-            {/* Widgets */}
-            {/* <Chat /> */}
-          </div>
+      <Chat /> */}
+      <div className="App">
+        <Header />
+        <div className="app__body">
+          <Sidebar />
+          <Feed />
+          {/* Widgets */}
+          {/* <Chat /> */}
         </div>
-      )}
+      </div>
+      {/*  )} */}
     </div>
   );
 }
