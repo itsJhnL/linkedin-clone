@@ -6,7 +6,7 @@ function Sidebar() {
   const recentItem = (topic) => (
     <div className="sidebar__recentItem">
       <span className="sidebar__hash">#</span>
-      <p>{topic}</p>F
+      <p>{topic}</p>
     </div>
   );
 
@@ -15,7 +15,7 @@ function Sidebar() {
       <div className="sidebar__top">
         <img src={require("./images/header_background.jpg")} alt="" />
         <Avatar className="sidebar__avatar" />
-        <h2>Anonymous</h2>
+        <h2>JanggoDev</h2>
         <h4>JanggoDev@gmail.com</h4>
       </div>
       <div className="sidebar__stats">

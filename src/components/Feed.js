@@ -31,7 +31,7 @@ function Feed() {
     e.preventDefault();
 
     db.collection("posts").add({
-      name: "Anonymous",
+      name: "JanggoDev",
       description: "00:00 AM",
       message: input,
       photoURL: "",
