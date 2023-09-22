@@ -2,10 +2,10 @@ import React from "react";
 import "../styles/Post.css";
 import { Avatar } from "@mui/material";
 import InputOption from "./InputOption";
-import ThumbUpOffAltIcon from '@mui/icons-material/ThumbUpOffAlt';
-import AddCommentIcon from '@mui/icons-material/AddComment';
-import RepeatIcon from '@mui/icons-material/Repeat';
-import SendIcon from '@mui/icons-material/Send';
+import ThumbUpOffAltIcon from "@mui/icons-material/ThumbUpOffAlt";
+import AddCommentIcon from "@mui/icons-material/AddComment";
+import RepeatIcon from "@mui/icons-material/Repeat";
+import SendIcon from "@mui/icons-material/Send";
 
 function Post({ name, description, message, photoUrl }) {
   return (
