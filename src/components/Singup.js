@@ -1,23 +1,24 @@
 import React from "react";
 import "../styles/LoginSignup.css";
 import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
-function Login() {
+function Singup() {
   return (
     <div className="container">
-      <div className="loginForm">
+      <div className="signupForm">
         <form action="">
-          <div className="loginHeader">
-            <p>Login</p>
+          <div className="signupHeader">
+            <p>Create an Account</p>
           </div>
-          <div className="loginInput">
+          <div className="signupInput">
             <input type="text" placeholder="Username" required />
             <input type="password" placeholder="Password" required />
-            <button type="submit">Login</button>
+            <button type="submit">Singup</button>
           </div>
           <div className="createAccount">
             <p>
-              Don't have an account? <Link to="/Signup">Singup</Link>{" "}
+              Already have an account? <Link to="/Login">Login</Link>
             </p>
           </div>
         </form>
@@ -26,4 +27,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Singup;

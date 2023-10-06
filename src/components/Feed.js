@@ -50,6 +50,7 @@ function Feed() {
               value={input}
               onChange={(e) => setInput(e.target.value)}
               type="text"
+              placeholder="Start a Post"
             />
             <button onClick={sendPost} type="submit">
               Send

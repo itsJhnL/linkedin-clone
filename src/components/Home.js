@@ -1,14 +1,8 @@
 import React from "react";
+import Login from "./Login";
 
 function home() {
-  return (
-    <div className="home">
-      <h1>This is my home</h1>
-      <div className="header"></div>
-      <div className="body"></div>
-      <div className="footer"></div>
-    </div>
-  );
+  return <Login />;
 }
 
 export default home;
