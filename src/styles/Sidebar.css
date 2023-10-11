@@ -4,7 +4,7 @@
   border-radius: 10px;
   text-align: center;
   height: fit-content;
-  flex: 0.2;
+  width: 250px;
 }
 
 .sidebar__avatar {
@@ -44,7 +44,7 @@
 }
 
 .sidebar__stats {
-  padding: 10px;
+  padding: 15px;
   margin-bottom: 10px;
   border: 1px solid lightgray;
   background-color: white;

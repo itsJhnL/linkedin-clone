@@ -31,11 +31,11 @@ function Sidebar() {
       <div className="sidenav">
         <div className="sidebar__bottom">
           <p>Recent</p>
-          {recentItem("reactjs")}
-          {recentItem("gagaling")}
-          {recentItem("din")}
-          {recentItem("ako")}
-          {recentItem("tiwala lang!")}
+          {recentItem("WarOnMe")}
+          {recentItem("KDrama")}
+          {recentItem("JujuOntheBeat")}
+          {recentItem("FreeToken")}
+          {recentItem("uZXi")}
         </div>
       </div>
     </div>
