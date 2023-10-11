@@ -1,17 +1,15 @@
 import React from "react";
 import "./App.css";
-import Header from "./components/Header";
-import Sidebar from "./components/Sidebar";
-import Feed from "./components/Feed";
-import { useSelector } from "react-redux";
 import { selectUser } from "./features/userSlice";
+import { useSelector } from "react-redux";
 // import Chat from "./components/Chat";
 import Login from "./components/Login";
-import Singup from "./components/Singup";
-import Home from "./components/Home";
+import Signup from "./components/Signup";
 import { Routes, Route } from "react-router-dom";
+import LandingPage from "./components/Home";
 
 function App() {
+
   const user = useSelector(selectUser);
 
   return (
@@ -19,22 +17,15 @@ function App() {
       {!user ? (
         <div className="loginPhase">
           <Routes>
-            <Route exact path="/Login" element={<Login />}></Route>
-            <Route exact path="/Signup" element={<Singup />}></Route>
-            <Route exact path="/" element={<Home />}></Route>
+            <Route exact path="/Signup" element={<Signup />}></Route>
+            <Route exact path="/" element={<Login />}></Route>
           </Routes>
         </div>
       ) : (
         // <Chat />
-        <div className="App">
-          <Header />
-          <div className="app__body">
-            <Sidebar />
-            <Feed />
-            {/* Widgets */}
-            {/* <Chat /> */}
-          </div>
-        </div>
+        <>
+          <LandingPage />
+        </>
       )}
     </div>
   );
